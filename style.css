@@ -123,6 +123,7 @@ div.main {
 	z-index: 20;
 	position: relative;
 	top: 0;
+	box-shadow: 0 0 10px rgb(103, 103, 103);
 }
 
 header {

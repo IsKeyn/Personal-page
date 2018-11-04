@@ -34,7 +34,7 @@ PersonalPage = {
 
 	show_blocks : function() {
 		$(window).scroll(function() {
-console.log($(this).scrollTop());
+
 			if ($(this).scrollTop() >= 400) {
 				if ($('.js_about').css('opacity')) {
 					$('.js_about').animate(
