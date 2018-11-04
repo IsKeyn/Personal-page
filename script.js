@@ -34,8 +34,8 @@ PersonalPage = {
 
 	show_blocks : function() {
 		$(window).scroll(function() {
-
-			if ($(this).scrollTop() >= 300) {
+console.log($(this).scrollTop());
+			if ($(this).scrollTop() >= 400) {
 				if ($('.js_about').css('opacity')) {
 					$('.js_about').animate(
 						{opacity: "1"},
@@ -44,7 +44,7 @@ PersonalPage = {
 				}
 			}
 
-			if ($(this).scrollTop() >= 650) {
+			if ($(this).scrollTop() >= 850) {
 				if ($('.js_project').css('opacity')) {
 					$('.js_project').animate(
 						{opacity: "1"},
@@ -53,7 +53,7 @@ PersonalPage = {
 				}
 			}
 
-			if ($(this).scrollTop() >= 1000) {
+			if ($(this).scrollTop() >= 1400) {
 				if ($('.js_js').css('opacity')) {
 					$('.js_js').animate(
 						{opacity: "1"},
@@ -62,7 +62,7 @@ PersonalPage = {
 				}
 			}
 
-			if ($(this).scrollTop() >= 1350) {
+			if ($(this).scrollTop() >= 1800) {
 				if ($('.js_contact').css('opacity')) {
 					$('.js_contact').animate(
 						{opacity: "1"},
