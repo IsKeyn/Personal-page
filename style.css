@@ -1,0 +1,259 @@
+@font-face {
+	font-family: "PFCentroSansPro-Light";
+	src: url("fonts/PFCentroSansPro-Light.otf") format("opentype"); 
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "PFCentroSansPro-Medium";
+	src: url("fonts/PFCentroSansPro-Medium.otf") format("opentype"); 
+	font-style: normal;
+	font-weight: normal;
+}
+
+:root {
+	--main-block-color: #ff8200;
+}
+
+body {
+	background: #000;
+	margin: 0 auto;
+	font-size: 16px;
+	font-family: PFCentroSansPro-Light;
+	padding-top: 70px;
+}
+
+a {
+	color: #000;
+	text-decoration: unset;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	color: var(--main-block-color);
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+button {
+	background: #ff8200;
+	border: 2px solid #ff8200;
+	color: #fff;
+	font-family: PFCentroSansPro-Medium;
+	font-size: 20px;
+	padding: 10px;
+	min-width: 300px;
+	margin: 15px auto 0px;
+	display: block;
+	transition: 1s;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #fff;
+	border: 2px solid #ff8200;
+	color: #ff8200;
+}
+
+div.background {
+	background: url('img/background.jpg') no-repeat;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 10;
+	background-size: 100% auto;
+}
+
+.pelena {
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.go_up {
+	position: fixed;
+	display: none;
+	bottom: 10px;
+	right: 10px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.go_up i {
+	font-weight: bold !important;
+	color: var(--main-block-color);
+}
+
+.error_box {
+	position: fixed;
+	display: none;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.error_box .fa-exclamation {
+	padding-left: 10px;
+}
+
+.error_box .error_message {
+	padding-left: 15px;
+}
+
+.error_box .close_error {
+	float: right;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+div.main {
+	width: 1300px;
+	margin: 0px auto;
+	background: #fff;
+	z-index: 20;
+	position: relative;
+	top: 0;
+}
+
+header {
+	background: url('img/header.jpg') no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 697px;
+	position: relative;
+}
+
+header .pelena {
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+header nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+
+header nav span.fio {
+	font-size: 27px;
+	font-family: PFCentroSansPro-Medium;
+	line-height: 50px;
+	padding-left: 20px;
+	font-weight: bold;
+	color: #fff9;
+}
+
+header .title {
+	font-size: 75px;
+	border: 20px solid #000;
+	position: absolute;
+	width: 780px;
+	height: 125px;
+	top: 35%;
+	left: 50%;
+	margin-left: -390px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 125px;
+	background: #fff9;
+	font-family: PFCentroSansPro-Medium;
+	opacity: 0;
+}
+
+article .block {
+	min-height: 350px;
+	padding-right: 60px;
+	padding-left: 60px;
+	clear: both;
+	padding-top: 50px;
+	opacity: 0;
+}
+
+article .block span {
+	display: block;
+	font-size: 22px;
+	line-height: 40px;
+}
+
+article .block span.more {
+	display: none;
+}
+
+article .block span.js_copy {
+	display: inline;
+	cursor: pointer;
+}
+
+article .block span.js_copy:hover {
+	text-decoration: underline;
+}
+
+article .block .block_1 {
+	width: 860px;
+}
+
+
+article .block .block_2 {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin-top: 33px;
+}
+
+article .block .left {
+	float: left;
+}
+
+article .block .right {
+	float: right;
+}
+
+article .block .block_2 .square {
+	height: 200px;
+	width: 200px;
+	border: 20px solid #ff8200;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 10;
+}
+
+article .block .block_2 .solid_square {
+	background: #ff8200;
+	height: 240px;
+	width: 240px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 15;
+	font-size: 125px;
+	color: #fff;
+	text-align: center;
+	line-height: 215px;
+}
+
+footer {
+	background-color: #ff8200;
+	padding: 30px;
+}
+
+footer span {
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+}
