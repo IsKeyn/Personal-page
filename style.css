@@ -134,7 +134,7 @@ header {
 }
 
 header .pelena {
-	background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0.1) none repeat scroll 0% 0%;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -142,13 +142,36 @@ header .pelena {
 }
 
 header nav {
-	position: absolute;
-	top: 0;
 	width: 100%;
 	z-index: 20;
+	position: absolute;
+	top: 0;
 }
 
-header nav span.fio {
+header nav .nav_button {
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 42px;
+	background: #fff3;
+	margin-right: 2px;
+	cursor: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+header .bottom_box {
+	position: absolute;
+	bottom: 0;
+	z-index: 20;
+	right: 0;
+	padding-right: 25px;
+	padding-bottom: 25px;
+}
+
+header .bottom_box span.fio {
 	font-size: 27px;
 	font-family: PFCentroSansPro-Medium;
 	line-height: 50px;
@@ -159,7 +182,7 @@ header nav span.fio {
 
 header .title {
 	font-size: 75px;
-	border: 20px solid #000;
+	border: 20px solid #fffc;
 	position: absolute;
 	width: 780px;
 	height: 125px;
@@ -169,9 +192,12 @@ header .title {
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 125px;
-	background: #fff9;
+	background: #ff8200cc;
 	font-family: PFCentroSansPro-Medium;
 	opacity: 0;
+	z-index: 20;
+	color: #fff;
+	text-shadow: #fff 0 0 2px;
 }
 
 article .block {
@@ -191,6 +217,7 @@ article .block span {
 
 article .block span.more {
 	display: none;
+	width: 100%;
 }
 
 article .block span.js_copy {
@@ -214,12 +241,27 @@ article .block .block_2 {
 	margin-top: 33px;
 }
 
+article .block .block_2:hover .solid_square {
+	top: 60px;
+	left: 60px;
+	transition: 1s;
+}
+
 article .block .left {
 	float: left;
 }
 
 article .block .right {
 	float: right;
+}
+
+article .block .slider_button {
+	width: 40px;
+	color: var(--main-block-color);
+	font-size: 30px;
+	line-height: 500px;
+	font-size: 100px;
+	cursor: pointer;
 }
 
 article .block .block_2 .square {
@@ -249,6 +291,7 @@ article .block .block_2 .solid_square {
 footer {
 	background-color: #ff8200;
 	padding: 30px;
+	margin-top: 50px;
 }
 
 footer span {
@@ -256,4 +299,41 @@ footer span {
 	color: #fff;
 	font-size: 20px;
 	line-height: 25px;
+}
+
+.pic_block {
+	width: 1100px;
+	text-align: center;
+	position: relative;
+}
+
+.pic_block img {
+	max-height: 500px;
+	max-width: 100%;
+	display: inline-block;;
+}
+
+.pic_block div.pic_box {
+	display: none;
+}
+
+.pic_block div.pic_box .info_block {
+	width: 1060px;
+	min-height: 27px;
+	position: absolute;
+	left: 0;
+	background: #ff8200cc;
+	bottom: 0px;
+	text-align: left;
+	padding: 20px;
+	color: #fff;
+	font-size: 20px;
+}
+
+article .block .pic_block div.pic_box span.info_block span {
+	line-height: 30px;
+}
+
+.pic_block div.active {
+	display: inline-block;
 }
